@@ -35,4 +35,12 @@ public class PrimeNumberTest {
         int expected = 0;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    public void when1() {
+        int finish = 1;
+        int result = PrimeNumber.calc(finish);
+        int expected = 0;
+        assertThat(result).isEqualTo(expected);
+    }
 }
