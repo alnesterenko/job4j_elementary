@@ -6,46 +6,38 @@ import org.junit.Assert;
 public class PointTest {
 
     @Test
-    public void when00to20then2() {
+    public void when0comma0to2comma0then2() {
         double expected = 2;
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 2;
-        int y2 = 0;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point a = new Point(0, 0);
+        Point b = new Point(0, 2);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
-    public void when12to23then1dot42() {
+    public void when1comma2to2comma3then1dot42() {
         double expected = 1.42;
-        int x1 = 1;
-        int y1 = 2;
-        int x2 = 2;
-        int y2 = 3;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point a = new Point(1, 2);
+        Point b = new Point(2, 3);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
-    public void when1122to2333then16dot27() {
+    public void when11comma22to23comma33then16dot27() {
         double expected = 16.27;
-        int x1 = 11;
-        int y1 = 22;
-        int x2 = 23;
-        int y2 = 33;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point a = new Point(11, 22);
+        Point b = new Point(23, 33);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
-    public void when113223to233333then162dot8() {
+    public void when113comma223to233comma333then162dot8() {
         double expected = 162.8;
-        int x1 = 113;
-        int y1 = 223;
-        int x2 = 233;
-        int y2 = 333;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point a = new Point(113, 223);
+        Point b = new Point(233, 333);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.1);
     }
 }
