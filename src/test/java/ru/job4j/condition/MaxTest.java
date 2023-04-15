@@ -39,4 +39,67 @@ public class MaxTest {
         int expected = 7;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    public void whenMax1And2And3Then3() {
+        int first = 1;
+        int second = 2;
+        int third = 3;
+        int result = Max.max(first, second, third);
+        int expected = 3;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenMax33And32And31Then33() {
+        int first = 33;
+        int second = 32;
+        int third = 31;
+        int result = Max.max(first, second, third);
+        int expected = 33;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenMax7And7And7Then7() {
+        int first = 7;
+        int second = 7;
+        int third = 7;
+        int result = Max.max(first, second, third);
+        int expected = 7;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenMax1And2And3And4Then4() {
+        int first = 1;
+        int second = 2;
+        int third = 3;
+        int fourth = 4;
+        int result = Max.max(first, second, third, fourth);
+        int expected = 4;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenMax33And32And31And30Then33() {
+        int first = 33;
+        int second = 32;
+        int third = 31;
+        int fourth = 30;
+        int result = Max.max(first, second, third, fourth);
+        int expected = 33;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenMax8And8And8And8Then8() {
+        int first = 8;
+        int second = 8;
+        int third = 8;
+        int fourth = 8;
+        int result = Max.max(first, second, third, fourth);
+        int expected = 8;
+        assertThat(result).isEqualTo(expected);
+    }
 }
