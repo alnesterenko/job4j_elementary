@@ -40,4 +40,13 @@ public class PointTest {
         double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.1);
     }
+
+    @Test
+    public void when113comma223comma15to233comma333comma444then458dot8() {
+        double expected = 458.8;
+        Point a = new Point(113, 223, 15);
+        Point b = new Point(233, 333, 444);
+        double out = a.distance3d(b);
+        Assert.assertEquals(expected, out, 0.1);
+    }
 }
